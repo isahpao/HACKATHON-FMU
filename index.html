@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HACKATHON FMU</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Avaliação clínica rápida!</h1>
+    <div class="container">
+      <form id="avaliacao">
+        <label for="deambula">Está deambulando com autonomia?</label>
+        <select name="deambula" id="deambula">
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+        <br />
+        <label for="alerta">Está alerta?</label>
+        <select name="alerta" id="alerta">
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+        <br />
+        <label for="apetite">Está com apetite?</label>
+        <select name="apetite" id="apetite">
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+        <br />
+        <label for="hidratado">Está hidratado?</label>
+        <select name="hidratado" id="hidratado">
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+        <br />
+        <label for="oximetria">Oximetria (%):</label>
+        <input type="number" id="oximetria" name="oximetria" required />
+        <br />
+        <label for="glasgow_consciencia"
+          >Escala de Glasgow (consciência - máx 18):</label
+        >
+        <input
+          type="number"
+          id="glasgow_consciencia"
+          name="glasgow_consciencia"
+          min="3"
+          max="18"
+          required
+        />
+        <br />
+        <label for="temperatura">Temperatura corporal (°C):</label>
+        <input
+          type="number"
+          id="temperatura"
+          name="temperatura"
+          step="0.1"
+          required
+        />
+        <br />
+        <label for="dificuldade_respiratoria">Dificuldade respiratória?</label>
+        <select name="dificuldade_respiratoria" id="dificuldade_respiratoria">
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+        <br />
+        <label for="sangramentos">Sangramentos visíveis?</label>
+        <select name="sangramentos" id="sangramentos">
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+        <br />
+        <label for="comportamento"
+          >Houve mudança súbita de comportamento?</label
+        >
+        <select name="comportamento" id="comportamento">
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+        <br />
+        <label for="glasgow_dor">Escala de Glasgow (dor - máx 24):</label>
+        <input
+          type="number"
+          id="glasgow_dor"
+          name="glasgow_dor"
+          min="0"
+          max="24"
+          required
+        />
+        <br />
+        <label for="resposta_neuro">Ausência de resposta neurológica?</label>
+        <select name="resposta_neuro" id="resposta_neuro">
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+        <br />
+        <button type="submit">Analisar</button>
+      </form>
+      <br />
+      <h2 id="resultado"></h2>
+      <br />
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
