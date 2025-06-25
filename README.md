@@ -72,7 +72,7 @@ Para testar localmente, siga os passos abaixo:
 ### 1️⃣ Clone o repositório
 
 ```bash```
-git clone https://github.com/isahpao/HACKATHON-FMU.git
+git clone https://github.com/isahpao/HACKATHON-FMU
 
 
 ### **2️⃣ Acesse a pasta do projeto**
