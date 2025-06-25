@@ -69,16 +69,20 @@ Este é um projeto **estático** (HTML, CSS e JavaScript puro), portanto **não 
 
 Para testar localmente, siga os passos abaixo:
 
-### 1️⃣ Clone o repositório
+### **1️⃣ Clone o repositório**
 
-```bash```
+```bash
 git clone https://github.com/isahpao/HACKATHON-FMU
 
+```
 
 ### **2️⃣ Acesse a pasta do projeto**
 
-```bash```
+```bash
+
 cd HACKATHON-FMU
+
+```
 
 ### **3️⃣ Execute o projeto**
 
